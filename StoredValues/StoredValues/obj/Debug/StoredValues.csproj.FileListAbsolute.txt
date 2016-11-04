@@ -1,0 +1,9 @@
+C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\bin\Debug\StoredValues.exe.config
+C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\bin\Debug\StoredValues.exe
+C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\bin\Debug\StoredValues.pdb
+C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\obj\Debug\StoredValues.csprojResolveAssemblyReference.cache
+C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\obj\Debug\StoredValues.AafesStoredValueForm.resources
+C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\obj\Debug\StoredValues.Properties.Resources.resources
+C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\obj\Debug\StoredValues.csproj.GenerateResource.Cache
+C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\obj\Debug\StoredValues.exe
+C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\obj\Debug\StoredValues.pdb
