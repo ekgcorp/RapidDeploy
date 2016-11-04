@@ -26,5 +26,10 @@ namespace StoredValues
         {
 
         }
+
+        private void OnShowAboutBox(object sender, EventArgs e)
+        {
+            MessageBox.Show("Created by: Echo Knowledge Group Co.", "About");
+        }
     }
 }

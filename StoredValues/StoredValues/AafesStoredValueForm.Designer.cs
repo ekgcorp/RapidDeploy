@@ -28,36 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this._imgLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this._imgLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // _imgLogo
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(35, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this._imgLogo.Image = global::StoredValues.Properties.Resources.ekgLogo_Trans;
+            this._imgLogo.Location = new System.Drawing.Point(12, 12);
+            this._imgLogo.Name = "_imgLogo";
+            this._imgLogo.Size = new System.Drawing.Size(100, 50);
+            this._imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this._imgLogo.TabIndex = 0;
+            this._imgLogo.TabStop = false;
+            this._imgLogo.Click += new System.EventHandler(this.OnShowAboutBox);
             // 
             // AafesStoredValueForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(573, 493);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this._imgLogo);
             this.Name = "AafesStoredValueForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AAFES Stored Value Tool";
             this.Load += new System.EventHandler(this.AafesStoredValueForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._imgLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox _imgLogo;
     }
 }
 
