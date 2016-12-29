@@ -1,0 +1,82 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Behaviors="using:Template10.Behaviors"
+      xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
+      xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+      xmlns:controls="using:Template10.Controls"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:RapidDeploy.Views"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:vm="using:RapidDeploy.ViewModels"
+      xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps" x:Class="RapidDeploy.Views.DevicePage"
+      x:Name="ThisPage"
+      mc:Ignorable="d">
+
+    <Page.DataContext>
+        <vm:DevicePageViewModel x:Name="ViewModel" />
+    </Page.DataContext>
+
+    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <!--  header  -->
+
+        <controls:PageHeader x:Name="pageHeader"
+                             Frame="{x:Bind Frame}"
+                             RelativePanel.AlignLeftWithPanel="True"
+                             RelativePanel.AlignRightWithPanel="True"
+                             RelativePanel.AlignTopWithPanel="True"
+                             Text="Manage Device" />
+
+        <!--  #region content  -->
+        <ScrollViewer EntranceNavigationTransitionInfo.IsTargetElement="True"
+                      Padding="12,8,0,0"
+                      RelativePanel.AlignBottomWithPanel="True"
+                      RelativePanel.AlignLeftWithPanel="True"
+                      RelativePanel.AlignRightWithPanel="True"
+                      RelativePanel.Below="pageHeader"
+                      VerticalScrollBarVisibility="Auto">
+
+            <Interactivity:Interaction.Behaviors>
+                <!--  enable submit on enter key  -->
+                <Behaviors:KeyBehavior Key="Enter">
+                    <Core:CallMethodAction MethodName="GotoMigrationPage" TargetObject="{Binding}" />
+                </Behaviors:KeyBehavior>
+
+            </Interactivity:Interaction.Behaviors>
+
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="migratePC" Content="Migrate PC" Margin="0,3" Width="225"
+                            Click="{x:Bind ViewModel.GotoMigrationPage}">
+
+
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="channelDB" Content="Update Channel DB" Margin="0,3" Width="225">
+
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="aSyncService" Content="Update ASYNC Service" Margin="0,3" Width="225">
+
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Pin Pad Pairing" Margin="0,3" Width="225">
+                        <Interactivity:Interaction.Behaviors>
+                            <Core:EventTriggerBehavior EventName="Click">
+                                <Behaviors:MessageDialogAction Content="This Will Run Ryan's Powershell Script"
+                                                       Title="Pair Active Device"
+                                                       OkText="PAIR"/>
+                            </Core:EventTriggerBehavior>
+
+                        </Interactivity:Interaction.Behaviors>
+                    </Button>
+                </StackPanel>
+
+            </StackPanel>
+        </ScrollViewer>
+    </RelativePanel>
+</Page>
