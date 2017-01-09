@@ -1,0 +1,71 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Behaviors="using:Template10.Behaviors"
+      xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
+      xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+      xmlns:controls="using:Template10.Controls"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:RapidDeploy.Views"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:vm="using:RapidDeploy.ViewModels"
+      xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps" x:Class="RapidDeploy.Views.MigrationPage"
+      x:Name="ThisPage"
+      mc:Ignorable="d">
+
+    <Page.DataContext>
+        <vm:MigrationPageViewModel x:Name="ViewModel" />
+    </Page.DataContext>
+
+    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <!--  header  -->
+
+        <controls:PageHeader x:Name="pageHeader"
+                             Frame="{x:Bind Frame}"
+                             RelativePanel.AlignLeftWithPanel="True"
+                             RelativePanel.AlignRightWithPanel="True"
+                             RelativePanel.AlignTopWithPanel="True"
+                             Text="Migration Results" />
+
+        <!--  #region content  -->
+        <ScrollViewer EntranceNavigationTransitionInfo.IsTargetElement="True"
+                      Padding="12,8,0,0"
+                      RelativePanel.AlignBottomWithPanel="True"
+                      RelativePanel.AlignLeftWithPanel="True"
+                      RelativePanel.AlignRightWithPanel="True"
+                      RelativePanel.Below="pageHeader"
+                      VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Store ID:" Margin="8,0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Terminal ID:" Margin="8,0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Store Name:" Margin="8,0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Hardware:" Margin="8,0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource TitleTextBlockStyle}" x:Name="HardDriveTextBlock" Text="HardDrive SN:" Margin="8,0" />
+                    <TextBox x:Name="HardDriveTextBox"
+                             RelativePanel.AlignLeftWith="HardDriveTextBlock"
+                             Width="200"
+                             Margin="20,0,0,0" />
+                    <!--Text="{Binding HardDriveSN,  Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />-->
+                        
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Deployment Tech:" Margin="8,0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Deployment Time:" Margin="8,0" />
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </RelativePanel>
+</Page>

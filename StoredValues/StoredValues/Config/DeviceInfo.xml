@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DeviceInfo xmlns="http://aafes.com/deviceinfoschema">
+
+  <Device xmlns="http://aafes.com/device" Hostname="101072401">
+    <Hardware>NCR 72 XRT</Hardware>
+    <DriveSN>111111</DriveSN>
+    <IP>10.22.219.11</IP>
+    <Gateway>10.22.218.08</Gateway>
+    <PinPadIP>10.22.219.111</PinPadIP>
+    <Router>FtHoodMegaFoodRA</Router>
+  </Device>
+  <Deploy xmlns="http://aafes.com/deploy" Complete="No" Server="No">
+    <StagingDate>2017-03-01T15:07:00</StagingDate>
+    <StartDate>2017-03-01T15:07:00</StartDate>
+    <EndDate>2017-03-01T15:07:00</EndDate>
+    <LegacyServer>None</LegacyServer>
+    <Pumps>0</Pumps>
+    <TrackingURL>www.ups.com/tracking</TrackingURL>
+  </Deploy>
+  <Store xmlns="http://aafes.com/store" TenDigit="3740230400" SevenDigit="1010724">
+    <Country>US</Country>
+    <State>TX</State>
+    <City>Killeen</City>
+    <Zip>76544</Zip>
+    <Base>Fort Hood</Base>
+    <Facility>Hood TJ Mills Mega Food Court</Facility>
+    <Brand>Burger King</Brand>
+    <BuildingNum>118</BuildingNum>
+    <Address>Bldg 118-761 St Tank Bn Ave</Address>
+    <TimeZone>CST</TimeZone>
+    <Region>Central</Region>
+    <Hours>
+      <Sun>Closed</Sun>
+      <Mon>0800-1900</Mon>
+      <Tue>0800-1900</Tue>
+      <Wed>0800-1900</Wed>
+      <Thur>0800-1900</Thur>
+      <Fri>0800-1900</Fri>
+      <Sat>0800-1600</Sat>
+     </Hours>
+    <Phone>
+      <Main>254-532-9970</Main>
+      <Alt>254-532-2424</Alt>
+    </Phone>
+  </Store>
+  <Contact xmlns="http://aafes.com/contact">
+    <User Role="Deploy">
+      <FirstName>Tom</FirstName>
+      <LastName>Jones</LastName>
+      <Phone>713-555-1212</Phone>
+      <Email>tomJones@microsoft.com</Email>
+      <Team>Team 2</Team>
+    </User>
+    <User Role="Staging">
+      <FirstName>Dave</FirstName>
+      <LastName>Crocket</LastName>
+      <Phone>713-555-1000</Phone>
+      <Email>daveCrocket@microsoft.com</Email>
+      <Team>HQ</Team>
+    </User>
+    <User Role="EUCT1">
+      <FirstName>Peggy</FirstName>
+      <LastName>Smithson</LastName>
+      <Phone>254-289-7457</Phone>
+      <Email>zzCRFortHoodEUCT@aafes.com</Email>
+      <Team>AAFES</Team>
+    </User>
+    <User Role="EUCT2">
+      <FirstName>Dale</FirstName>
+      <LastName>Sherrill</LastName>
+      <Phone>254-532-8157</Phone>
+      <Email>zzCRFortHoodEUCT@aafes.com</Email>
+      <Team>AAFES</Team>
+    </User>
+    <User Role="FTS">
+      <FirstName>Karen</FirstName>
+      <LastName>Mello-Elliott</LastName>
+      <Phone>214-930-7389</Phone>
+      <Email>KMello@aafes.com</Email>
+      <Team>AAFES</Team>
+    </User>
+  </Contact>
+</DeviceInfo>

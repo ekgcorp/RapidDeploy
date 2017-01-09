@@ -7,3 +7,7 @@ C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\obj\
 C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\obj\Debug\StoredValues.csproj.GenerateResource.Cache
 C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\obj\Debug\StoredValues.exe
 C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\obj\Debug\StoredValues.pdb
+C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\bin\Debug\DeploymentToolLibrary.dll
+C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\bin\Debug\DeploymentToolLibrary.pdb
+C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\bin\Debug\StoredValues.exe.CodeAnalysisLog.xml
+C:\Users\ekgadmin\Documents\GitHub\customer_aafes\StoredValues\StoredValues\bin\Debug\StoredValues.exe.lastcodeanalysissucceeded

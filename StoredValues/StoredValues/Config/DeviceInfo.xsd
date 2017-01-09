@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DeviceInfo"
+           targetNamespace="http://aafes.com/deviceinfoschema"
+           elementFormDefault="qualified"
+           xmlns="http://aafes.com/deviceinfoschema"
+           xmlns:mstns="http://aafes.com/deviceinfo.xsd"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+    <xs:complexType name="Device">
+        <xs:sequence>
+          <xs:element name ="Hardware" type="xs:string"/>
+          <xs:element name="DriveSN" type="xs:string"/>
+          <xs:element name="IP" type="xs:string"/>
+          <xs:element name="Gateway" type="xs:string"/>
+          <xs:element name="PinPadIP" type="xs:string"/>
+          <xs:element name="Router" type="xs:string"/>
+
+        </xs:sequence>
+        <xs:attribute name="Hostname" type="xs:int" use ="required"/>
+      </xs:complexType>
+
+  <xs:complexType name ="User">
+    <xs:sequence>
+      <xs:element name="FirstName" nillable="false" type="xs:string"/>
+      <xs:element name="LastName" nillable="false" type="xs:string"/>
+      <xs:element name="Phone" type="xs:string"/>
+      <xs:element name="Email" nillable="false" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name ="Contact">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Employee" type="User" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element name="Contractor" type="User"/>
+        <xs:element name="Team" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="Role"/>
+      <xs:attribute name="ID" type="xs:positiveInteger" use ="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeviceInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any namespace="##other">
+          
+        </xs:any>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
